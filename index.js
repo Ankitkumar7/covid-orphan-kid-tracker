@@ -60,6 +60,4 @@ app.post('/save-response', function (req, res) {
 
   })
 
-app.listen(port, () => {
-  console.log(` app listening at http://localhost:${port}`)
-})
+app.listen(process.env.PORT || 8080);
